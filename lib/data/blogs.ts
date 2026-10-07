@@ -9,6 +9,7 @@ export const blogs: Blog[] = [
     category: "Pediatric Airway Health",
     readingTime: "4 min read",
     publishedAt: "2026-09-01",
+    image: "/images/blog/child-snoring-restless-sleep.webp",
     content: [
       "Does your child snore, sleep with their mouth open, toss and turn throughout the night, or sleep in unusual positions? Do they frequently have a blocked or runny nose? These may seem like small childhood habits, but sometimes they can indicate that your child is struggling to breathe comfortably during sleep.",
       "Healthy breathing plays an important role in a child's sleep, growth and development. Persistent mouth breathing may be associated with nasal obstruction, enlarged adenoids or tonsils, allergies, tongue posture, or developing jaw and dental patterns.",
@@ -27,6 +28,7 @@ export const blogs: Blog[] = [
     category: "Pediatric Dentistry",
     readingTime: "3 min read",
     publishedAt: "2026-09-01",
+    image: "/images/blog/milk-tooth-why-treat.webp",
     content: [
       "One of the most common questions parents ask is: “Doctor, it's only a milk tooth. Won't it fall anyway?”",
       "Yes, milk teeth eventually fall—but every milk tooth has its own natural time to go.",
@@ -65,6 +67,7 @@ export const blogs: Blog[] = [
     category: "Dental Myths",
     readingTime: "5 min read",
     publishedAt: "2026-09-01",
+    image: "/images/blog/dental-myths-root-canals-wisdom-teeth-xrays.webp",
     content: [
       "Dental treatment is surrounded by stories passed from one person to another. Let's clear up a few common misconceptions.",
       "MYTH: “Root canal treatment causes diseases elsewhere in the body.” Modern root canal treatment is performed to remove infected or inflamed tissue from inside a tooth, disinfect the root canal system and preserve a tooth that may otherwise need extraction. Claims that properly performed root canal treatment routinely causes systemic disease are not supported by current mainstream dental evidence.",
@@ -84,6 +87,7 @@ export const blogs: Blog[] = [
     category: "Restorative Dentistry",
     readingTime: "5 min read",
     publishedAt: "2026-09-01",
+    image: "/images/blog/save-tooth-or-extract.webp",
     content: [
       "“Doctor, just remove it.” We hear this surprisingly often.",
       "When a tooth is painful, extraction may appear to be the quickest and easiest solution. It can also seem less expensive initially than root canal treatment followed by restoration.",

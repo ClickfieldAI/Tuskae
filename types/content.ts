@@ -20,6 +20,8 @@ export interface Blog {
   category: string;
   readingTime: string;
   publishedAt: string;
+  /** Featured image path, e.g. "/images/blog/my-slug.webp". */
+  image?: string;
 }
 
 export interface Doctor {

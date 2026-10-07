@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { BlogCard } from "@/components/shared/blog-card";
+import { PlaceholderImage } from "@/components/shared/placeholder-image";
 import { AppointmentCta } from "@/components/sections/appointment-cta";
 import { blogs, getBlogBySlug } from "@/lib/data/blogs";
 
@@ -57,7 +58,16 @@ export default async function BlogDetailPage({
         </div>
       </section>
 
-      <section className="py-24 sm:py-32">
+      <div className="container-narrow relative -mt-16 sm:-mt-20">
+        <PlaceholderImage
+          src={blog.image}
+          label={blog.title}
+          objectPosition="center 20%"
+          className="aspect-[16/9] w-full rounded-[2rem] shadow-[0_20px_60px_-20px_rgba(35,48,59,0.35)]"
+        />
+      </div>
+
+      <section className="py-16 sm:py-24">
         <div className="container-narrow space-y-6">
           {blog.content.map((paragraph, i) => (
             <p key={i} className="text-base leading-relaxed text-[var(--ink-muted)]">
