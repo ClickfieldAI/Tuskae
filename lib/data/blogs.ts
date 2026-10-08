@@ -111,6 +111,7 @@ export const blogs: Blog[] = [
     category: "Orthodontics",
     readingTime: "4 min read",
     publishedAt: "2026-09-01",
+    image: "/images/blog/extraction-before-braces.jpg",
     keywords: [
       "do I need teeth removed for braces",
       "tooth extraction before orthodontic treatment",
@@ -231,6 +232,7 @@ export const blogs: Blog[] = [
     category: "Oral Surgery",
     readingTime: "5 min read",
     publishedAt: "2026-10-08",
+    image: "/images/blog/dental-surgery-dont-be-scared.jpg",
     keywords: ["is surgical tooth extraction painful", "what is a surgical extraction", "dental surgery anxiety"],
     content: [
       p("When you hear the words “surgical extraction” or “dental surgery,” it is completely natural to feel anxious. But the word “surgery” does not necessarily mean something frightening or dangerous. In dentistry, it often simply describes a procedure that requires careful access to a tooth or surrounding tissue."),
@@ -293,6 +295,7 @@ export const blogs: Blog[] = [
     category: "Oral Surgery",
     readingTime: "6 min read",
     publishedAt: "2026-10-08",
+    image: "/images/blog/after-surgical-tooth-removal-aftercare.jpg",
     keywords: [
       "tooth extraction aftercare",
       "dry socket symptoms",
