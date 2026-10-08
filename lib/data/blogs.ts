@@ -60,17 +60,23 @@ export const blogs: Blog[] = [
   },
   {
     slug: "milk-tooth-why-treat",
-    title: "“It's Only a Milk Tooth!” — Why Treat a Tooth That Will Eventually Fall?",
+    title: "“It's Only a Milk Tooth!” — Should You Treat a Baby Tooth That Will Eventually Fall Out?",
     excerpt:
-      "Milk teeth do fall out eventually — but every one has its own natural time to go. Here's why an infected primary tooth still deserves proper treatment.",
+      "Milk teeth do fall out eventually — but should you still treat a decayed or infected one? Here's why every milk tooth deserves proper treatment.",
     category: "Pediatric Dentistry",
     readingTime: "3 min read",
     publishedAt: "2026-09-01",
     image: "/images/blog/milk-tooth-why-treat.webp",
-    keywords: ["should I treat my child's milk tooth", "pulpectomy for kids", "baby tooth infection treatment"],
+    keywords: [
+      "should I treat my child's milk tooth",
+      "is it necessary to treat a baby tooth cavity",
+      "pulpectomy for kids",
+      "baby tooth infection treatment",
+    ],
     content: [
       p("One of the most common questions parents ask is: “Doctor, it's only a milk tooth. Won't it fall anyway?”"),
       p("Yes, milk teeth eventually fall—but every milk tooth has its own natural time to go."),
+      h2("Should I treat my child's milk tooth if it's going to fall out anyway?"),
       p("When decay reaches the nerve of a primary tooth, a child may develop pain, sensitivity, difficulty eating, swelling or infection. Sometimes children don't complain clearly even when a tooth is badly affected."),
       p("If the tooth is restorable and still needs to remain in the mouth for a significant period, a pulpectomy may be recommended. This involves removing infected or damaged tissue from inside the tooth, disinfecting the canals and restoring the tooth so it can continue functioning."),
       h2("Why save a milk tooth?"),
@@ -79,18 +85,40 @@ export const blogs: Blog[] = [
       p("The goal is therefore not to “save every milk tooth.”"),
       p("The goal is to choose the treatment that is most appropriate for that particular tooth, at that particular stage of your child's development."),
     ],
+    faqs: [
+      {
+        question: "Should I treat my child's milk tooth if it's going to fall out anyway?",
+        answer:
+          "Yes, in most cases. Every milk tooth has its own natural time to shed, and an infected one left untreated can cause pain, swelling, or difficulty eating in the meantime. If the tooth is restorable and needs to remain in the mouth for a while longer, a pulpectomy can remove the infection and keep it functional until it's ready to fall out naturally.",
+      },
+      {
+        question: "What happens if a milk tooth infection is left untreated?",
+        answer:
+          "An infected primary tooth can cause ongoing pain, swelling, or difficulty chewing, and children don't always complain clearly even when a tooth is badly affected. Leaving it untreated simply because it will eventually fall out isn't always the safest option.",
+      },
+      {
+        question: "What is a pulpectomy and when is it needed for a child's tooth?",
+        answer:
+          "A pulpectomy removes infected or damaged tissue from inside a primary tooth, disinfects the canals, and restores the tooth so it can keep functioning. It's recommended when a tooth is restorable and still needs to remain in the mouth for a significant period before its natural shedding time.",
+      },
+    ],
   },
   {
     slug: "extraction-before-braces",
-    title: "Do Teeth Always Need to Be Removed Before Braces?",
+    title: "Do I Need Teeth Removed Before Braces? Do Teeth Always Need to Be Extracted for Orthodontic Treatment?",
     excerpt:
-      "“My teeth are crowded — does that mean I have to remove teeth before braces?” Not necessarily. Orthodontic treatment should always be individualized.",
+      "“My teeth are crowded — does that mean I have to remove teeth before braces?” Not necessarily. Here's how orthodontists actually decide.",
     category: "Orthodontics",
     readingTime: "4 min read",
     publishedAt: "2026-09-01",
-    keywords: ["do I need teeth removed for braces", "tooth extraction orthodontic treatment"],
+    keywords: [
+      "do I need teeth removed for braces",
+      "tooth extraction before orthodontic treatment",
+      "is extraction necessary for crowded teeth",
+    ],
     content: [
       p("“My teeth are crowded. Does that mean I have to remove teeth before braces?” Not necessarily."),
+      h2("Do I need to remove teeth before getting braces?"),
       p("Orthodontic treatment is not simply about making teeth look straight. Before deciding how to create space, the dentist or orthodontist considers several factors—including the amount of crowding, jaw size, facial profile, bite, age, growth pattern, position of the teeth and available space."),
       p("Depending on the individual case, treatment may involve braces or aligners along with approaches such as expansion, growth modification in growing children, space management, or other orthodontic techniques."),
       p("In some cases, however, extraction really is the appropriate option. Severe crowding, certain bite relationships, tooth positions or facial considerations can make extraction-based orthodontic treatment a reasonable choice."),
@@ -98,6 +126,18 @@ export const blogs: Blog[] = [
       p("Modern orthodontic treatment should be individualized."),
       p("Before removing healthy permanent teeth, understand why the extraction has been recommended, what alternatives are appropriate for your case, and what the expected advantages and limitations of each option are."),
       p("Your smile is not just a row of teeth. Treatment planning should consider your teeth, jaws, bite and facial structure together."),
+    ],
+    faqs: [
+      {
+        question: "Do I need to remove teeth before braces?",
+        answer:
+          "Not necessarily. Whether extraction is needed depends on factors like the amount of crowding, jaw size, facial profile, bite, age, and available space. Many cases are managed with expansion, growth modification, or space management instead — extraction is only recommended when it's genuinely the appropriate option for that individual case.",
+      },
+      {
+        question: "Why do some orthodontic patients need extractions and others don't?",
+        answer:
+          "Orthodontic treatment should be individualized. Factors such as severe crowding, certain bite relationships, tooth positions, and facial considerations can make extraction-based treatment reasonable for one patient, while another with similar crowding may be treated without removing any teeth.",
+      },
     ],
   },
   {
@@ -123,20 +163,42 @@ export const blogs: Blog[] = [
       p("The better question is not simply, “Is there radiation?” It is: “Is this X-ray necessary for my diagnosis or treatment?”"),
       p("When in doubt, ask your dentist why an investigation or treatment has been recommended. Good dentistry starts with understanding—not fear."),
     ],
+    faqs: [
+      {
+        question: "Does root canal treatment cause disease in other parts of the body?",
+        answer:
+          "No. Modern root canal treatment removes infected or inflamed tissue from inside a tooth, disinfects the root canal system, and preserves a tooth that may otherwise need extraction. Claims that properly performed root canal treatment routinely causes systemic disease are not supported by current mainstream dental evidence.",
+      },
+      {
+        question: "Should every impacted wisdom tooth be removed?",
+        answer:
+          "Not automatically. Its position, symptoms, surrounding gum and bone, effect on the neighboring tooth, pathology, and future risk all need to be considered. Some impacted teeth require removal, while others may simply need periodic monitoring.",
+      },
+      {
+        question: "Are dental X-rays safe?",
+        answer:
+          "Dental X-rays involve ionizing radiation, so they're prescribed only when clinically justified, using relatively low doses kept as low as reasonably achievable. They can reveal decay between teeth, root conditions, bone changes, and impacted teeth that aren't visible during a routine exam — information that's often essential for an accurate diagnosis.",
+      },
+    ],
   },
   {
     slug: "save-tooth-or-extract",
-    title: "Save the Tooth or Pull It Out? Think Beyond Today's Pain",
+    title: "Save the Tooth or Pull It Out? Root Canal vs Extraction — Think Beyond Today's Pain",
     excerpt:
-      "“Doctor, just remove it.” We hear this surprisingly often — but the cheapest and easiest decision today isn't always the simplest one over the next 10 or 20 years.",
+      "“Doctor, just remove it.” We hear this surprisingly often — but is root canal or extraction actually the better choice? The cheapest decision today isn't always the simplest one over the next 10 or 20 years.",
     category: "Restorative Dentistry",
     readingTime: "5 min read",
     publishedAt: "2026-09-01",
     image: "/images/blog/save-tooth-or-extract.webp",
-    keywords: ["root canal vs extraction", "should I save or remove my tooth"],
+    keywords: [
+      "root canal vs extraction",
+      "should I save or remove my tooth",
+      "is root canal or extraction better",
+    ],
     content: [
       p("“Doctor, just remove it.” We hear this surprisingly often."),
       p("When a tooth is painful, extraction may appear to be the quickest and easiest solution. It can also seem less expensive initially than root canal treatment followed by restoration."),
+      h2("Should I save my tooth with a root canal, or get it extracted?"),
       p("But there is one important question to ask before removing a permanent tooth: Can this tooth be predictably saved?"),
       p("Your natural teeth are designed for chewing, speaking and maintaining your bite. Once a permanent tooth is extracted, it will not grow back."),
       p("When a tooth is removed, the space left behind may eventually affect chewing and the position of surrounding or opposing teeth. Depending on the location and individual situation, replacing the missing tooth with an implant, bridge, denture or another appropriate option may later be recommended."),
@@ -147,6 +209,18 @@ export const blogs: Blog[] = [
       p("And most importantly, the decision to remove your tooth should be based on your clinical condition, prognosis and informed choice—not fear, convenience, myths or pressure from someone else."),
       p("Sometimes extraction is the right treatment. Sometimes saving the tooth is the right treatment. But once a natural tooth is removed, that decision cannot be reversed."),
       p("So before saying, “Just pull it out,” understand your options. Save when it is worth saving. Remove when it truly needs to be removed."),
+    ],
+    faqs: [
+      {
+        question: "Is root canal treatment or tooth extraction better?",
+        answer:
+          "It depends on the tooth's condition. If a tooth has an infected or damaged pulp but adequate remaining structure and a reasonable prognosis, root canal treatment followed by restoration can keep the natural tooth functional. But a severely fractured tooth, advanced periodontal disease, or a very poor prognosis may genuinely require extraction. The right choice depends on long-term prognosis, not which option is cheaper today.",
+      },
+      {
+        question: "What happens if I extract a tooth instead of saving it?",
+        answer:
+          "Once a permanent tooth is extracted, it will not grow back. The space left behind may eventually affect chewing and the position of surrounding or opposing teeth, and replacing it later with an implant, bridge, or denture may be recommended — which is often more involved than treating the original tooth would have been.",
+      },
     ],
   },
   {
