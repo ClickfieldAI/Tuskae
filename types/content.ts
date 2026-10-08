@@ -11,17 +11,26 @@ export interface Service {
   faqs?: { question: string; answer: string }[];
 }
 
+/** One block of blog body copy, rendered in order. */
+export type BlogBlock =
+  | { type: "p"; text: string }
+  | { type: "h2"; text: string }
+  | { type: "list"; items: string[] };
+
 export interface Blog {
   slug: string;
   title: string;
   excerpt: string;
-  /** Paragraphs of body copy, rendered in order. */
-  content: string[];
+  content: BlogBlock[];
   category: string;
   readingTime: string;
   publishedAt: string;
   /** Featured image path, e.g. "/images/blog/my-slug.webp". */
   image?: string;
+  /** Extra search terms to target beyond the title/excerpt, e.g. the exact question patients search. */
+  keywords?: string[];
+  /** Question/answer pairs rendered on the post and marked up as FAQPage structured data for SEO. */
+  faqs?: { question: string; answer: string }[];
 }
 
 export interface Doctor {
