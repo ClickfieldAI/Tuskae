@@ -1,5 +1,5 @@
 import type { GalleryItem } from "@/types/content";
-import { galleryPeoplePhotos } from "@/lib/images";
+import { galleryPeoplePhotos, facilityGalleryPhotos } from "@/lib/images";
 
 // galleryPeoplePhotos order: [0] WA0130 mom+girl, [1-5] WA0146/0147/0148/0150/0151 happy faces,
 // [6] WA0133, [7] IMG_1439 young woman, [8] IMG_2113 toddler garden, [9] IMG_2125 toddler sitting,
@@ -47,3 +47,41 @@ export const galleryItems: GalleryItem[] = galleryPeoplePhotos.map((photo, i) =>
   alt: peopleAlts[i] ?? "A happy moment at Tuskaè",
   category: peopleCategories[i] ?? "Happy Faces",
 }));
+
+// Real photos of the Tuskaè facility — reception, treatment rooms, equipment, and
+// Dr. Malavika's private consultation room (used for myofunctional therapy and
+// infant feeding guidance sessions) — shown as their own section on the Gallery page.
+export const facilityGalleryItems: GalleryItem[] = [
+  { ...facilityGalleryPhotos.receptionDesk, alt: "The reception desk at Tuskaè", category: "Reception" },
+  { ...facilityGalleryPhotos.treatmentRoom, alt: "A treatment room at Tuskaè", category: "Treatment Room" },
+  {
+    ...facilityGalleryPhotos.consciousSedationEquipment,
+    alt: "Conscious sedation equipment used for anxious or fearful patients",
+    category: "Equipment",
+  },
+  {
+    ...facilityGalleryPhotos.uvSterilizationCabinet,
+    alt: "UV sterilization cabinet maintaining strict hygiene standards",
+    category: "Equipment",
+  },
+  {
+    ...facilityGalleryPhotos.sterilizationUtilityRoom,
+    alt: "The sterilization and utility room at Tuskaè",
+    category: "Equipment",
+  },
+  {
+    ...facilityGalleryPhotos.consultationRoom1,
+    alt: "Dr. Malavika's private consultation room, used for myofunctional therapy and infant feeding guidance",
+    category: "Consultation Room",
+  },
+  {
+    ...facilityGalleryPhotos.consultationRoom2,
+    alt: "The warm, cozy seating area in the private consultation room",
+    category: "Consultation Room",
+  },
+  {
+    ...facilityGalleryPhotos.consultationRoom3,
+    alt: "The private consultation room where families discuss their child's care",
+    category: "Consultation Room",
+  },
+];

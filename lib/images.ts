@@ -104,11 +104,46 @@ export const galleryPeoplePhotos = [
   realPhotoWithDims("file_00000000ce2c81faac090099c4cddc0a.png"),
 ];
 
+// Real photos of the Tuskaè facility itself (reception, treatment rooms, equipment,
+// and Dr. Malavika's private consultation room), provided directly by the clinic and
+// processed (auto-oriented, resized, compressed) into public/images/facility.
+const facilityDims: Record<string, { width: number; height: number }> = {
+  "reception-desk.jpg": { width: 1800, height: 1350 },
+  "treatment-room.jpg": { width: 1800, height: 2400 },
+  "conscious-sedation-equipment.jpg": { width: 1800, height: 2400 },
+  "uv-sterilization-cabinet.jpg": { width: 1800, height: 2400 },
+  "sterilization-utility-room.jpg": { width: 1800, height: 2400 },
+  "consultation-room-1.jpg": { width: 1800, height: 1350 },
+  "consultation-room-2.jpg": { width: 1800, height: 1350 },
+  "consultation-room-3.jpg": { width: 1800, height: 1350 },
+};
+
+function facilityPhoto(filename: string) {
+  return `/images/facility/${filename}`;
+}
+
+function facilityPhotoWithDims(filename: string) {
+  return { src: facilityPhoto(filename), ...facilityDims[filename] };
+}
+
 export const galleryClinicPhotos = {
   reception: clinicPhotoWithDims("clinic-interior.jpg"),
   treatmentRoom: clinicPhotoWithDims("tech-clinic.jpg"),
   treatmentRoomAlt: clinicPhotoWithDims("clinic-interior.jpg"),
   equipment: clinicPhotoWithDims("preventive-tools.jpg"),
+};
+
+// Real photos of the facility itself, for the Gallery page's separate "Inside Our
+// Clinic" section — distinct from galleryPeoplePhotos, which are patient/family photos.
+export const facilityGalleryPhotos = {
+  receptionDesk: facilityPhotoWithDims("reception-desk.jpg"),
+  treatmentRoom: facilityPhotoWithDims("treatment-room.jpg"),
+  consciousSedationEquipment: facilityPhotoWithDims("conscious-sedation-equipment.jpg"),
+  uvSterilizationCabinet: facilityPhotoWithDims("uv-sterilization-cabinet.jpg"),
+  sterilizationUtilityRoom: facilityPhotoWithDims("sterilization-utility-room.jpg"),
+  consultationRoom1: facilityPhotoWithDims("consultation-room-1.jpg"),
+  consultationRoom2: facilityPhotoWithDims("consultation-room-2.jpg"),
+  consultationRoom3: facilityPhotoWithDims("consultation-room-3.jpg"),
 };
 
 // Stock clinic images only — never real people, since these rotate across every

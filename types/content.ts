@@ -60,7 +60,7 @@ export interface Testimonial {
 export interface GalleryItem {
   src: string;
   alt: string;
-  category: "Interior" | "Reception" | "Kids Area" | "Treatment Room" | "Equipment" | "Doctors" | "Happy Faces";
+  category: "Interior" | "Reception" | "Kids Area" | "Treatment Room" | "Equipment" | "Doctors" | "Happy Faces" | "Consultation Room";
   /** Intrinsic pixel dimensions — used to lay out the masonry grid without cropping. */
   width: number;
   height: number;
